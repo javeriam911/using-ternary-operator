@@ -7,11 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-body{
-    background-color: aquamarine;
-    font-family: cursive ;
-}
-
+        body {
+            background-color: aquamarine;
+            font-family: cursive;
+        }
     </style>
 </head>
 
@@ -35,7 +34,15 @@ body{
     function submit() {
         let age = document.getElementById("age").value;
         (age <= 18) ? result.innerHTML = " you are not eligible to vote ." : result.innerHTML = " you are eligible ."
-    }
+
+
+if(age <0){
+    result.innerHTML = " Enter valid age"
+
+}
+}
+
+
 </script>
 
 </html>
