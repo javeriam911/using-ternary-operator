@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body{
+    background-color: aquamarine;
+    font-family: cursive ;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <fieldset>
+        <h3>Are you eligible to vote ?
+
+        </h3>
+        <div class="container">
+            <label for=""> Enter your age :</label>
+            <input id="age" type="number"><br><br>
+            <button onclick=" submit()"> Click me</button><br><br>
+            <div id="result"></div>
+        </div>
+    </fieldset>
+</body>
+
+<script>
+    let result = document.getElementById("result")
+    function submit() {
+        let age = document.getElementById("age").value;
+        (age <= 18) ? result.innerHTML = " you are not eligible to vote ." : result.innerHTML = " you are eligible ."
+    }
+</script>
+
+</html>
